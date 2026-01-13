@@ -1,0 +1,21 @@
+{
+  "name": "comp-3018-in-class",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/andreianoling/COMP-3018-In-class.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/andreianoling/COMP-3018-In-class/issues"
+  },
+  "homepage": "https://github.com/andreianoling/COMP-3018-In-class#readme"
+}
