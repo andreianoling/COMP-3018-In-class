@@ -10,11 +10,25 @@ app.get("/", (req, res) => {
 
 export default app;
 
+/**
+ * Represents the response structure for a health check endpoint
+ */
+interface HealthCheckResponse {
+    status: string;
+    uptime: number;
+    timestamp: string;
+    version: string;
+}
+
+// Using the interface to type your response
 app.get("/api/v1/health", (req, res) => {
-    res.json({
+    // Create a response object that matches our interface
+    const healthData: HealthCheckResponse = {
         status: "OK",
         uptime: process.uptime(),
         timestamp: new Date().toISOString(),
         version: "1.0.0",
-    });
+    };
+
+    res.json(healthData);
 });
